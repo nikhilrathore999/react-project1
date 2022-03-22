@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Home from "./Components/Home";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from "react-router-dom";
+import Header from "./Components/Header";
+import { ArticleProvider } from "./ArticleContext";
+import "./style.css"
+import ArtcileDisplay from "./Components/ArticleDisplay";
+import ArticleDetail from "./Components/ArticleDetail";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <ArticleProvider>
+        <Router>
+          <Header />
+          <Routes>
+            <Route path="/" element={<Navigate to="/home" />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/category/:catag" element={<ArtcileDisplay/>} />
+            <Route path="/category/:catag/:catagId" element={<ArticleDetail/>}/>
+          </Routes>
+        </Router>
+      </ArticleProvider>
     </div>
   );
 }

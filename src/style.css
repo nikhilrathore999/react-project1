@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#root{
+    background-image: url("https://images.unsplash.com/photo-1583513645242-25a32d451084?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8a2VyYWxhfGVufDB8fDB8fA%3D%3D&w=1000&q=80");
+    background-repeat: no-repeat;
+    background-size:100% 100% ;
+    font-family:cursive;
+}
+
+.header_links{
+    padding-top: 35px;
+    margin-left: 10%;
+    margin-bottom: 10px;
+}
+.header_tabs{
+    font-family:cursive;
+    text-decoration: underline transparent;
+    font-size: 25px;
+    margin-right: 90px;
+    color:black;
+    transition: all .6s ease-in ;
+}
+.header_tabs:hover{
+    text-decoration: underline blue;
+    
+}
+
+.header_article{
+    margin-bottom: 10px;
+    margin-left: 10px;
+    text-shadow: 2px 2px rgb(0, 255, 179);
+}
+
+.article_page{
+    margin-left: 50px;
+}
+
+.article_page_container{
+    display: flex;
+}
+
+.article_page_main{
+    margin-left: 100px;
+    width: 60%;
+}
+
+.article_page_top{
+    padding-left: 50px;
+}
+
+.top_stories{
+    display: flex;
+    margin-top: 50px;  
+}
+
+.top_stories:hover{
+    cursor: pointer;
+}
+
+.article{
+    display: flex;
+    width: 50%;
+    margin-bottom: 50px;
+}
+
+.article:hover{
+    cursor: pointer;
+}
+
+.article_info{
+    width: 400px;
+    margin-left: 10px;
+}
+
+.article_info_div{
+    margin-left: 20px;
+}
+.article_header{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    width: 400px;
+}
+
+.article_top{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.clkd_article_info{
+   
+    margin-top: 100px;
+    
+}
+
+.para1{
+    width: 400px;
+    margin: 20px 40px;
+}
+
+.clicked_article{
+    margin-left: 30%;
+}
+
+.related_articles{
+    display: flex;
+    margin-top: 50px;
+}
+
+.rel_article_list{
+    margin-right:60px ;
+}
+
+.home_page_container{
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+.home_article1{
+    margin-left: 30px;
+    border-radius: 10px;
+}
+.home_heading{
+    position: absolute;
+    bottom: -20px;
+    font-size: 30px;
+    color:white;
+    font-weight:bolder;
+    margin-left: 20px;
+}
+
+.latest_artcle{
+    margin-right: 150px;
+}
+
+.latest_para{
+    width:300px;
+    font-size:15px;
+    color: rgb(88, 87, 87);
+}
